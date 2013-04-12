@@ -1,0 +1,3 @@
+create user pingpong with password 'pingpong';
+create database pingpong_development owner pingpong;
+alter user pingpong CREATEDB;
