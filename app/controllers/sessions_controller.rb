@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-
   def index
     r = nil
 
@@ -13,7 +12,6 @@ class SessionsController < ApplicationController
         throw new Error("Login failed!");
       end  
     end
-
   end
 
 

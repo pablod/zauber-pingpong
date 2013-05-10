@@ -1,1 +1,37 @@
-Ping Pong!
+<!doctype html>
+<html ng-app="pingpong">
+  <head>
+    <script src="underscore-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.js"></script> 
+    <script src="jquery.min.js"></script>
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <script src="app.js"></script>
+    <script src="directives.js"></script>
+    <script src="services.js"></script>
+    <script src="controllers.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+  </head>
+  <body>
+    <tabs>
+      <pane title="Now">
+        Now!
+      </pane>
+      <pane title="Players">
+        <ul ng-controller="PlayersController">
+          <li ng-repeat="p in players">
+            <a href="" ng-click="showModal(p)">{{p}}</a>
+          </li>
+        </ul>
+      </pane>
+      <pane title="Played">
+        Played!
+      </pane>
+    </tabs>
+  </body>
+</html>
